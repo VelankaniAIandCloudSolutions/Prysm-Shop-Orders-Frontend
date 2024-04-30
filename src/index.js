@@ -1,10 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import "admin-lte/dist/css/adminlte.min.css";
+import "admin-lte/plugins/fontawesome-free/css/all.min.css";
+import "admin-lte/dist/js/adminlte.min.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import axios from "axios";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+axios.defaults.baseURL = "http://localhost:5000/api/v1/";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
